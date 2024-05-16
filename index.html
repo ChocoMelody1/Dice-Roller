@@ -3,17 +3,44 @@
 <head>
 
 <link rel='stylesheet' href='https://ChocoMelody1.github.io/StyleMaster.css' type'text/css' />
- 
+
+  <script>
+      function generateNumber() {
+        var number = document.getElementById("generate");
+        number.innerHTML = Math.floor((Math.random()* 100) + 1);
+      }
+    </script>
+ <style>
+      button {
+          display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+      }
+      button:hover {background-color: #3e8e41}
+      
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+     
+    </style>
+  
+  
+
 </head>
 
 <body>
 <h1>Dice Roller</h1>
-<div class="center-justified">   
 
-
-</div>
- 
-
+<p> Click me to generate a random number</p>
+    <button onclick="generateNumber()">click me</button>
+    <p id="generate"></p>
+      <center>
 
     
 
